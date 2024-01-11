@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +9,23 @@
     <script src="src/components/CardNews/index.js" defer></script>
     <script src="src/components/TItuloDinamico/index.js" defer></script>
 </head>
+
 <body>
     <div class="container">
-        <div class="card">
-            <div class="card-left">
-                <span>By Carlos Vinicius</span>
-                <h1>Darth Vader Contrata devs</h1>
-                <p>Darth Vader procura desenvolvedores Front-end</p>
-            </div>
-            <div class="card-right">
-                <img src="https://t.ctcdn.com.br/WXtJMXu0mL_Dj_71jGJ0egARjbo=/768x432/smart/i776622.jpeg" alt="imagem do darth-vader" width="200">
-            </div>
-        </div>
+        <titulo-dinamico title-text="Carlos Vini"></titulo-dinamico>
+        <card-news 
+            autor="Carlos" title="Darth Vader Contrata devs"
+            paragrafo="Darth Vader procura desenvolvedores Front-end"
+            url="https://github.com/Carl-Vini?tab=repositories"
+            imagem="https://t.ctcdn.com.br/WXtJMXu0mL_Dj_71jGJ0egARjbo=/768x432/smart/i776622.jpeg">
+        </card-news>
+        <card-news 
+            title="Luke morreu juntamente com o Java"
+            paragrafo="Luke foi estudar Java e morreu"
+            url="https://github.com/Carl-Vini?tab=repositories">
+        </card-news>
     </div>
-    <titulo-dinamico title-text="Carlos Vini"></titulo-dinamico>
-    <card-news autor="Carlos" 
-    title="Darth Vader Contrata devs" 
-    paragrafo="Darth Vader procura desenvolvedores Front-end"
-    url="https://github.com/Carl-Vini?tab=repositories"
-    imagem="https://t.ctcdn.com.br/WXtJMXu0mL_Dj_71jGJ0egARjbo=/768x432/smart/i776622.jpeg"
-    ></card-news>
+
 </body>
+
 </html>
